@@ -13,7 +13,7 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'cc-ddl-styleguide');
+fractal.set('project.title', 'Clubcard DDL Styleguide');
 
 /*
  * Tell Fractal where to look for components.
@@ -30,6 +30,12 @@ fractal.docs.set('path', path.join(__dirname, 'docs'));
  */
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 
-fractal.web.set('static.path', __dirname + '/public');
+
+/*
+ * static assets.
+ */
+fractal.web.set('static.path', __dirname + '/assets');
+
+
 
 

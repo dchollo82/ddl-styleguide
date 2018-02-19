@@ -1,0 +1,50 @@
+.ddl-skinnybnr {
+    background: #00539f;
+    font-family: TESCOModern, "Helvetica Neue", Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .ddl-skinnybnr__cta {
+    display: flex;
+    flex-direction: column;
+  }
+  .ddl-skinnybnr__cta:hover {
+    text-decoration: none;
+  }
+  .ddl-skinnybnr__bnr__img {
+    width: 100%;
+    max-height: 110px;
+    object-position: 50% 50%;
+    object-fit: cover;
+  }
+  .ddl-skinnybnr__copy {
+    padding: 20px 15px 0;
+  }
+  .ddl-skinnybnr__copy__head {
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .ddl-skinnybnr__copy__subhead {
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .ddl-skinnybnr__copy__small {
+    color: #fff;
+    font-size: 8px;
+    line-height: 8px;
+  }
+  .ddl-skinnybnr__icon {
+    padding: 12px;
+  }
+  
+  @media screen and (min-width: 48em) {
+    .ddl-skinnybnr__cta {
+      flex-direction: row;
+    }
+    .ddl-skinnybnr__bnr__img {
+      height: 110px;
+    }
+  }
