@@ -20,6 +20,7 @@ fractal.set('project.title', 'Clubcard DDL Styleguide');
  */
 fractal.components.set('path', path.join(__dirname, 'components'));
 
+
 /*
  * Tell Fractal where to look for documentation pages.
  */
