@@ -33,10 +33,13 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
 
 
 /*
- * static assets.
+ * Assets dest
  */
 fractal.web.set('static.path', __dirname + '/assets');
 
 
-
+/*
+ * Build dest
+ */
+fractal.web.set('builder.dest', __dirname + '/build');
 

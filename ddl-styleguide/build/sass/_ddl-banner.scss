@@ -1,0 +1,71 @@
+// Clubcard Skinny Banner 
+$namespace: ddl;
+$skinnybanner: #{$namespace}-skinnybnr;
+
+.#{$skinnybanner} {
+  background: $backgroundColour;
+  font-family: $tescoModReg;
+  position: relative;
+  overflow: hidden;
+  &__cta {
+    display: flex; 
+    flex-direction: column;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__bnr {
+    &__img {
+      width: 100%;
+      max-height: 110px;
+      object-position: 50% 50%;
+      object-fit: cover;
+    }
+  }  
+  &__copy {
+    padding: 20px 15px 0;
+    // min-height: 90px;
+    &__head {
+      color: $fontColor;
+      font-size: $headFontSize;
+      line-height: $headLineHeight;
+      margin: 0;
+    }
+    &__subhead {
+      color: $fontColor;
+      font-size: $subHeadFontSize;
+      line-height: $subHeadLineHeight;
+    }
+    &__small {
+      color: $fontColor;
+      font-size: $smallPrintFontSize;
+      line-height: $smallPrintFontSize;
+    }
+  }
+  &__icon {
+    padding: 12px;
+    &ddl-btn-primary {
+      
+    }
+  }
+  
+}
+@media screen and (min-width: 48em) {
+  .#{$skinnybanner} {
+    &__cta {      
+      flex-direction: row;
+    }
+    &__bnr {
+      &__img {
+        height: 110px;
+      }
+    }
+    &__icon {
+      &__primary {
+        // position: absolute;
+        // right: calc(1vh - 4px);
+        // bottom: calc(1vw - -3px);
+      }
+    }
+  }
+}
